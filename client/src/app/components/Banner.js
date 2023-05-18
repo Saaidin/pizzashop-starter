@@ -21,10 +21,10 @@ const Banner = () => {
           <MouseParallaxChild factorX={0.1} factorY={0.2}>
             <div className="flex flex-col sm:flex-row items-center text-center sm:text-left flex-1 px-6 text-white">
               <div className="flex flex-col">
-                <div className="sm:ml-2 font-bangers uppercase font-bold tracking-[0.03em]">
+                <div className="sm:ml-2 font-bangers uppercase font-bold tracking-[0.03em] mb-2 sm:mb-0">
                   Best pizza in town
                 </div>
-                <h1 className="text-6xl sm:text-8xl font-bangers uppercase font-bold drop-shadow-md">
+                <h1 className="text-4xl sm:text-8xl font-bangers uppercase font-bold drop-shadow-md">
                   Pizza perfection <br /> in every bite
                 </h1>
               </div>
@@ -53,7 +53,7 @@ const Banner = () => {
               <Image
                 src={"/chilli-1.png"}
                 width={160}
-                height={84}
+                height={90}
                 alt=""
                 priority={1}
               />
@@ -76,7 +76,7 @@ const Banner = () => {
             <MouseParallaxChild
               factorX={0.6}
               factorY={0.6}
-              className="absolute top-80 -left-24 hidden sm:flex"
+              className="absolute top-[200px] -left-24 hidden sm:flex"
             >
               <Image
                 src={"/garlic-1.png"}
@@ -90,7 +90,7 @@ const Banner = () => {
             <MouseParallaxChild
               factorX={0.3}
               factorY={0.6}
-              className="absolute top-[22rem] -left-8 hidden sm:flex"
+              className="absolute top-[15rem] -left-8 hidden sm:flex"
             >
               <Image
                 src={"/garlic-2.png"}
@@ -104,7 +104,7 @@ const Banner = () => {
             <MouseParallaxChild
               factorX={0.4}
               factorY={1}
-              className="absolute top-96 -left-20 hidden sm:flex"
+              className="absolute top-[280px] -left-20 hidden sm:flex"
             >
               <Image
                 src={"/garlic-3.png"}
@@ -118,7 +118,7 @@ const Banner = () => {
             <MouseParallaxChild
               factorX={0.2}
               factorY={0.2}
-              className="absolute top-96 left-12 hidden sm:flex"
+              className="absolute top-[300px] left-15 hidden sm:flex"
             >
               <Image
                 src={"/leaves.png"}
