@@ -13,7 +13,7 @@ const SizeSelection = ({ pizza, size, setSize }) => {
               size === "small"
                 ? "border-2 border-orange p-[2px] rounded-full"
                 : "border-transparent filter saturate-[.1]"
-            }`}
+            } mb-1`}
             src={pizza.image}
             width={60}
             height={60}
@@ -36,7 +36,7 @@ const SizeSelection = ({ pizza, size, setSize }) => {
               size === "medium"
                 ? "border-2 border-orange p-[2px] rounded-full"
                 : "border-transparent filter saturate-[.1]"
-            }`}
+            } mb-1`}
             src={pizza.image}
             width={70}
             height={70}
@@ -59,7 +59,7 @@ const SizeSelection = ({ pizza, size, setSize }) => {
               size === "large"
                 ? "border-2 border-orange p-[2px] rounded-full"
                 : "border-transparent filter saturate-[.1]"
-            }`}
+            } mb-1`}
             src={pizza.image}
             width={80}
             height={80}
