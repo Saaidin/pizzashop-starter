@@ -62,12 +62,18 @@ const CartBottom = () => {
       {/* checkout modal */}
       {modal && (
         <Modal
+          onClick={closeModal}
+          className="bg-white w-full h-full sm:max-w-[900px] sm:max-h-[600px] sm:rounded-[30px] sm:fixed sm:top-[50%] sm:left-[50%] sm:translate-x-[-50%] sm:translate-y-[-50%] outline-none"
           isOpen={modal}
           styles={modalStyles}
           onRequestClose={closeModal}
           contentLabel="Checkout Modal"
         >
-          modal
+          {/* close modal icons */}
+          <div className="absolute z-30 right-2 top-2 hover:scale-110 duration-200 cursor-pointer">
+            <IoCloseOutline className="text-4xl text-orange" />
+          </div>
+          <CheckoutDetails />
         </Modal>
       )}
     </>
