@@ -7,7 +7,9 @@ import Footer from "./components/Footer"
 import CartMobileIcon from "./components/CartMobileIcon"
 // provider
 import CartProvider from "./context/CartContext"
+// components
 import CartMobile from "./components/CartMobile"
+import CartDesktop from "./components/CartDesktop"
 
 const quicksand = Quicksand({
   subsets: ["latin"],
@@ -37,6 +39,7 @@ export default function RootLayout({ children }) {
           <CartMobileIcon />
           <CartMobile />
           {children}
+          <CartDesktop />
           <Footer />
         </body>
       </html>
