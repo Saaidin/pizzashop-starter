@@ -9,13 +9,27 @@ const Nav = () => {
       <div className="container mx-auto flex flex-col sm:flex-row gap-y-3 justify-between items-center">
         {/* logo */}
         <Link href="/" className="max-w-[160px] sm:max-w-max">
-          <Image src={"logo.svg"} width={180} height={180} alt="" />
+          <Image
+            src={"logo.svg"}
+            width={160}
+            height={90}
+            alt=""
+            priority
+            className="aspect-video"
+          />
         </Link>
         {/* phone & cart */}
         <div className="flex gap-x-8 items-center">
           {/* phone */}
           <div className="flex gap-x-3 items-center">
-            <Image src={"phone.svg"} width={42} height={42} alt="" />
+            <Image
+              src={"phone.svg"}
+              width={80}
+              height={45}
+              alt=""
+              priority
+              className="aspect-video"
+            />
             <div className="text-white">
               <div className="font-robotoCondensed uppercase font-medium leading-none text-sm">
                 24/7 Pizza delivery service

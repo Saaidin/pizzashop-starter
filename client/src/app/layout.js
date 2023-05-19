@@ -4,6 +4,10 @@ import { Bangers, Quicksand, Roboto_Condensed } from "next/font/google"
 // components
 import Nav from "./components/Nav"
 import Footer from "./components/Footer"
+import CartMobileIcon from "./components/CartMobileIcon"
+// provider
+import CartProvider from "./context/CartContext"
+import CartMobile from "./components/CartMobile"
 
 const quicksand = Quicksand({
   subsets: ["latin"],
@@ -24,14 +28,18 @@ const robotoCondensed = Roboto_Condensed({
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`${quicksand.variable} ${bangers.variable} ${robotoCondensed.variable} font-quicksand`}
-      >
-        <Nav />
-        {children}
-        <Footer />
-      </body>
-    </html>
+    <CartProvider>
+      <html lang="en">
+        <body
+          className={`${quicksand.variable} ${bangers.variable} ${robotoCondensed.variable} font-quicksand`}
+        >
+          <Nav />
+          <CartMobileIcon />
+          <CartMobile />
+          {children}
+          <Footer />
+        </body>
+      </html>
+    </CartProvider>
   )
 }
