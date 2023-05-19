@@ -125,6 +125,7 @@ export default function CartProvider({ children }) {
         setIsOpen,
         addToCart,
         cart,
+        setCart,
         removeItem,
         increaseAmount,
         decreaseAmount,
