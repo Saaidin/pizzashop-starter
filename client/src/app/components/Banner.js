@@ -21,10 +21,10 @@ const Banner = () => {
           <MouseParallaxChild factorX={0.1} factorY={0.2}>
             <div className="flex flex-col sm:flex-row items-center text-center sm:text-left flex-1 px-6 text-white">
               <div className="flex flex-col">
-                <div className="sm:ml-2 font-bangers uppercase font-bold tracking-[0.03em] ">
+                <div className="sm:ml-2 font-bangers uppercase tracking-[0.03em] ">
                   Best pizza in town
                 </div>
-                <h1 className="text-4xl sm:text-8xl font-bangers uppercase font-bold drop-shadow-md">
+                <h1 className="text-4xl sm:text-8xl font-bangers uppercase drop-shadow-md">
                   Pizza perfection <br /> in every bite
                 </h1>
               </div>
@@ -76,7 +76,7 @@ const Banner = () => {
             <MouseParallaxChild
               factorX={0.6}
               factorY={0.6}
-              className="absolute top-[200px] -left-24 hidden sm:flex"
+              className="absolute top-[243px] -left-[70px] hidden sm:flex"
             >
               <Image
                 src={"/garlic-1.png"}

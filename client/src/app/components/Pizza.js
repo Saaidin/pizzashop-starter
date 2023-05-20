@@ -42,18 +42,18 @@ const Pizza = ({ pizza }) => {
       />
       {/* title */}
       <div onClick={openModal}>
-        <div className="text-xl font-bold mb-3 capitalize cursor-pointer">
+        <div className="font-robotoCondensed text-xl mb-3 capitalize cursor-pointer">
           {pizza.name}
         </div>
       </div>
       {/* description */}
-      <div className="text-sm font-medium min-h-[60px] mb-6 bg-pink-200">
+      <div className="font-quicksand text-sm font-medium min-h-[60px] mb-6 ">
         {pizza.description}
       </div>
       {/* price & btn */}
       <div className="mb-6 flex items-center justify-between">
         {/* price -> hidden (sm-640px) - visible (md-768px) */}
-        <div className="hidden md:flex text-xl font-semibold">
+        <div className="font-quicksand hidden md:flex text-xl font-semibold">
           starts at ${pizza.priceSm}
         </div>
         {/* btn -> hidden (sm-640px) - visible (md-768px) */}
